@@ -84,6 +84,45 @@
             perspective: 1000px;
             position: relative;
             overflow: hidden;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .countdown-title {
+                font-size: 1.2rem;
+            }
+            
+            .countdown-time {
+                font-size: 1.5rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .countdown-time span {
+                min-width: 45px;
+                margin: 0.3rem;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .countdown {
+                padding: 1.5rem 1rem;
+            }
+            
+            .countdown-title {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .countdown-time {
+                font-size: 1.2rem;
+            }
+            
+            .countdown-time span {
+                min-width: 40px;
+                padding: 0.3rem 0.6rem;
+            }
         }
         
         /* 添加炫光效果 */
